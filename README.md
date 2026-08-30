@@ -22,6 +22,10 @@ python main.py --ip <IP_ADDRESS> --port <PORT_OR_RANGE> [OPTIONS]
 - `--TCS`: Perform a TCP Connect Scan.
 - `--SYN`: Perform a SYN Scan (Requires root/administrator privileges).
 - `--ACK`: Perform an ACK Scan.
+- `--FIN`: Perform an FIN Scan.
+- `--XMAS`: Perform an XMAS Scan.
+- `--NULL`: Perform an NULL Scan.
+- `--UDP`: Perform an UDP Scan.
 
 If no scan type is specified, a SYN scan and banner grabbing will be performed by default.
 

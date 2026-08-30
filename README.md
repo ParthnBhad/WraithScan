@@ -42,7 +42,4 @@ python main.py --ip 192.168.1.1 --port 20-100 --TCS
 ```
 
 ## Roadmap / In Progress
-
-- [ ] UDP scan
-- [ ] FIN / NULL / XMAS scans
 - [ ] Protocol-specific service enumeration

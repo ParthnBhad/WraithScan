@@ -14,6 +14,7 @@ if __name__ == "__main__":
     scan_group.add_argument("--FIN", action="store_true", help="FIN Scan")
     scan_group.add_argument("--XMAS", action="store_true", help="XMAS Scan")
     scan_group.add_argument("--NULL", action="store_true", help="NULL Scan")
+    scan_group.add_argument("--UDP", action="store_true", help="UDP Scan")
     args = parser.parse_args()
     # Initialize the scanner object
     scanner = Scanner(args.ip, args.port)
@@ -24,6 +25,7 @@ if __name__ == "__main__":
         "FIN": scanner.fin_scan,
         "XMAS": scanner.xmas_scan,
         "NULL": scanner.null_scan,
+        "UDP": scanner.UDP_scan,
     }
     try:
         scanner.verify_input()
